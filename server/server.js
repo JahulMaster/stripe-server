@@ -44,6 +44,7 @@ app.post('/create-checkout-session', async (req, res) => {
   } catch (e) {
     res.status(500).json({ error: e.message });
   }
+  console.log('New Session');
 });
 
 app.listen(3000);
